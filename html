@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <form id="myform" action="" method="get">
+            <fieldset id="basicDetail">
+                <legend>Basic Detail : </legend>
+                <label for="firstName">First Name :
+                    <input type="text" name="firstName" id="firstName" />
+                </label>
+                <label for="lastName">Last Name :
+                    <input type="text" name="lastName" id="lastName" />
+                </label>
+                <br>
+                <br>
+                <label for="designation">Designation :
+                    <input type="text" name="designation" id="designation" /></label>
+
+                <label for="address1">Address 1 :
+                    <input type="text" name="address1" id="address1" /></label>
+
+                <label for="address2">Address 2 :
+                    <input type="text" name="address2" id="address2"></label>
+                <br><br>
+                <label for="email">Email :
+                    <input type="text" name="email" id="email" /></label>
+
+                <label for="city">City :
+                    <input type="text" name="city" id="city"></label>
+                <br><br>
+
+                <div id="gender">
+
+                    <label for="phone">Phone Number :
+                        <input type="text" name="phone" id="phone"></label>
+                    <label for="gender">Gender:</label>
+                    <label for="male">
+                        <input type="radio" value="male" name="gender" id="male" /> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" value="female" name="gender" id="female" /> Female
+                    </label>
+                </div>
+                <br>
+
+                <label for="zipCode">Zip Code : </label>
+                <input type="text" name="zipCode" id="zipCode" />
+
+
+                <label for="relationshipStatus">Relationship Status :</label>
+                <input type="text" name="relationshipStatus" id="relationshipStatus" />
+
+                <br><br>
+                <label for="dateOfBirth">Date Of Birth :</label>
+                <input type="date" name="dateOfBirth" id="dateOfBirth" />
+
+
+                <span class="save" id="basicInfoSave"> save </span>
+            </fieldset>
+
+
+            <fieldset id="education">
+                <legend>Education Detail : </legend>
+                <br><br>
+                <table id="education-table">
+                    <tr class="static">
+                        <td>
+                            <p id="sscBoard">SSC Result :----</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sscBoard">Name Of Board :</label>
+                            <input type="text" name="sscBoard" id="sscBoard" />
+                        </td>
+                        <td>
+                            <label for="sscPassingYear">Passing Year :</label>
+                            <input type="text" name="sscPassingYear" id="sscPassingYear" />
+                        </td>
+                        <td>
+                            <label for="sscPercentage">Percentage :</label>
+                            <input type="text" name="sscPercentage" id="sscPercentage" />
+
+                        </td>
+                    </tr>
+                    <tr class="HSC/DIPLOMA">
+                        <td>
+                            <p id="hscBoard">HSC/DIPLOMA Result :----</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="hscBoard">Name Of Board :</label>
+                            <input type="text" name="hscBoard" id="hscBoard" />
+                        </td>
+                        <td>
+                            <label for="hscPassingYear">Passing Year :</label>
+                            <input type="text" name="hscPassingYear" id="hscPassingYear" />
+                        </td>
+                        <td>
+                            <label for="hscPercentage">Percentage :</label>
+                            <input type="text" name="hscPercentage" id="hscPercentage" />
+                        </td>
+                    </tr>
+                    <tr class="static">
+                        <td>
+                            <p id="bachelor">Bachelor Degree :----</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="bachelorCourseName">Course Name :</label>
+                            <input type="text" name="bachelorCourseName" id="bachelorCourseName" />
+                        </td>
+                        <td>
+                            <label for="bachelorUniversity">University :</label>
+                            <input type="text" name="bachelorUniversity" id="bachelorUniversity" />
+                        </td>
+                        <td>
+                            <label for="bachelorPassingYear">Passing Year :</label>
+                            <input type="text" name="bachelorPassingYear" id="bachelorPassingYear" />
+                        </td>
+                        <td>
+                            <label for="bachelorPercentage">Percentage :</label>
+                            <input type="text" name="bachelorPercentage" id="bachelorPercentage" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p id="master">Master Degree :----</p>
+                        </td>
+                    </tr>
+                    <tr class="static">
+                        <td>
+                            <label for="masterCourseName">Course Name :</label>
+                            <input type="text" name="masterCourseName" id="masterCourseName" />
+                        </td>
+                        <td>
+                            <label for="masterUniversity">University :</label>
+                            <input type="text" name="masterUniversity" id="masterUniversity" />
+                        </td>
+                        <td>
+                            <label for="masterPassingYear">Passing Year :</label>
+                            <input type="text" name="masterPassingYear" id="masterPassingYear" />
+                        </td>
+                        <td>
+                            <label for="masterPercentage">Percentage :</label>
+                            <input type="text" name="masterPercentage" id="masterPercentage" />
+                        </td>
+                    </tr>
+                </table>
+                <span id="add-education"> add </span><span id="remove-education"> remove </span>
+                <span class="save" id="educationInfoSave"> save </span>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience : </legend>
+                <table id="experience-table">
+                    <tr id="companyRow1">
+                        <td>
+                            <label for="companyName1">Company Name :</label>
+                            <input type="text" name="companyName1" id="companyName1" />
+                        </td>
+                        <td>
+                            <label for="designation1">Designation :</label>
+                            <input type="text" name="designation1" id="designation1" />
+                        </td>
+                        <td>
+                            <label for="from1">From :</label>
+                            <input type="date" name="from1" id="from1" />
+                        </td>
+                        <td>
+                            <label for="to1">To :</label>
+                            <input type="date" name="to1" id="to1" />
+                        </td>
+                    </tr>
+                    <tr id="companyRow2">
+                        <td>
+                            <label for="companyName2">Company Name :</label>
+                            <input type="text" name="companyName2" id="companyName2" />
+                        </td>
+                        <td>
+                            <label for="designation2">Designation :</label>
+                            <input type="text" name="designation2" id="designation2" />
+                        </td>
+                        <td>
+                            <label for="from2">From :</label>
+                            <input type="date" name="from2" id="from2" />
+                        </td>
+                        <td>
+                            <label for="to2">To :</label>
+                            <input type="date" name="to2" id="to2" />
+                        </td>
+                    </tr>
+                    <tr id="companyRow3">
+                        <td>
+                            <label for="companyName3">Company Name :</label>
+                            <input type="text" name="companyName3" id="companyName3" />
+                        </td>
+                        <td>
+                            <label for="designation3">Designation :</label>
+                            <input type="text" name="designation3" id="designation3" />
+                        </td>
+                        <td>
+                            <label for="from3">From :</label>
+                            <input type="date" name="from3" id="from3" />
+                        </td>
+                        <td>
+                            <label for="to3">To :</label>
+                            <input type="date" name="to3" id="to3" />
+                        </td>
+                    </tr>
+                </table>
+                <span id="add-experience"> add </span><span id="remove-experience"> remove </span>
+                <span class="save" id="workExperienceInfoSave"> save </span>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Languages Known :</legend>
+                <table id="languages-table">
+                </table>
+                <span id="add-language">add</span><span id="remove-language">remove</span>
+                <span class="save" id="languagesInfoSave"> save </span>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Technologies You Know :</legend>
+                <table id="technologies-table">
+
+                </table>
+                <span id="add-technologies"> add </span><span id="remove-technologies"> remove </span>
+                <span class="save" id="technologiesInfoSave"> save </span>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Reference Contact : ---</legend>
+                <table id="reference-table">
+                    <tr>
+                        <td>
+                            <label for="contactName1">Name :
+                                <input type="text" name="contactName1" id="contactName1" />
+                            </label>
+                        </td>
+                        <td>
+                            <label for="contactNumber1">Contact Number :
+                                <input type="text" name="contactNumber1" id="contactNumber1" />
+                            </label>
+                        </td>
+                        <td>
+                            <label for="relation1">Relation :
+                                <input type="text" name="relation1" id="relation1" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="contactName2">Name :
+                                <input type="text" name="contactName2" id="contactName2" />
+                            </label>
+                        </td>
+                        <td>
+                            <label for="contactNumber2">Contact Number :
+                                <input type="text" name="contactNumber2" id="contactNumber2" />
+                            </label>
+                        </td>
+                        <td>
+                            <label for="relation2">Relation :
+                                <input type="text" name="relation2" id="relation2" />
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="contactName3">Name :
+                                <input type="text" name="contactName3" id="contactName3" />
+                            </label>
+                        </td>
+                        <td>
+                            <label for="contactNumber3">Contact Number :
+                                <input type="text" name="contactNumber3" id="contactNumber3" />
+                            </label>
+                        </td>
+                        <td>
+                            <label for="relation3">Relation :
+                                <input type="text" name="relation3" id="relation3" />
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <span class="save" id="referenceInfoSave"> save </span>
+            </fieldset>
+
+            <fieldset id="preferences">
+                <legend>Preferences :</legend>
+                <label for="preferedLocation">Prefered Location : </label>
+                <select name="preferedLocation" id="preferedLocation">
+                    <option value="delhi">delhi</option>
+                    <option value="ahmedabad">ahmedabad</option>
+                    <option value="benguluru">benguluru</option>
+                    <option value="pune">pune</option>
+                </select>
+
+                <div>
+                    <label for="noticePeriod">notice period :
+                        <input type="text" name="noticePeriod" id="noticePeriod" />
+                    </label>
+                    <label for="expectedCTC">expected CTC :
+                        <input type="text" name="expectedCTC" id="expectedCTC" />
+                    </label>
+                    <label for="currentCTC">current CTC :
+                        <input type="text" name="currentCTC" id="currentCTC" />
+                    </label>
+
+                </div>
+                <label for="department">department : </label>
+                <select name="department" id="department">
+                    <option value="Development">Development</option>
+                    <option value="Design">Design</option>
+                    <option value="Marketing">Marketing </option>
+                </select>
+
+                <span class="save" id="preferenceInfoSave"> save </span>
+
+            </fieldset>
+
+
+            <input type="submit" value="submit" id="submit" />
+            <input type="reset" value="reset" id="reset" />
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
